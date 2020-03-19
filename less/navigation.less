@@ -1,1 +1,26 @@
 // Navigation Styles here
+.nav-section{
+    
+    margin:3% auto;
+    .flexMixin(@justify:space-between, @align:center);
+    a{
+        font-size:2rem;
+        text-decoration:none;
+        color:@shark;
+    }
+    nav{
+        width: 350px;
+        .flexMixin(@justify:space-around);
+        @media @mobile{
+            width:100%;
+        }
+    }
+    h1{
+      @media @mobile{
+            margin:0 auto;
+        }  
+    }
+    @media @mobile{
+        .flexMixin(@direction:column);
+    }
+}
