@@ -1,1 +1,17 @@
 // Mixins in here
+/* defaults for flex mixin are 
+    flex-direction:row//justify-content:flex-start//align-items:flex-start */
+.flexMixin(@direction:row, @justify:flex-start, @align:flex-start){
+    display:flex;
+    flex-direction:@direction;
+    justify-content:@justify;
+    align-items:@align;
+}
+.button-specs(@b-color:@eastern-blue,@width:200px,@font-color:white) {
+    display:block;
+    background-color: @b-color;
+    width:@width;
+    font-size:2rem;
+    border-radius:10px;
+    color:@font-color;
+}
