@@ -165,6 +165,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+form {
+  width: 80%;
+}
+form label {
+  text-align: center;
+}
+form label,
+form input,
+form textarea {
+  width: 100%;
+  margin: 4% 0;
+}
 .container {
   max-width: 800px;
   width: 100%;
@@ -341,4 +353,17 @@ header {
     width: 80%;
     margin: 4% auto;
   }
+}
+.home .form-div {
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.home .form-div .radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 25%;
 }
